@@ -43,12 +43,15 @@ public class TelaCadastro extends AppCompatActivity {
         });
 
     }
+    //valida os dados de email e senha
     private void validaDados(){
         String email = binding.cadastroLogin.getText().toString().trim();
         String senha = binding.cadastroSenha.getText().toString().trim();
         String confirmesenha = binding.confirmaSenha.getText().toString().trim();
         String senhaArmazenada = "null";
 
+        // um if para valida os dados
+        //verificar o finish depois
        if (!email.isEmpty()){
            if (!senha.isEmpty()){
 
@@ -77,8 +80,8 @@ public class TelaCadastro extends AppCompatActivity {
                 email, senhaArmazenada
         ).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                finish();
                 startActivity(new Intent(this, TelaLogin.class));
+                finish();
             } else {
                 binding.progessbarCarregar.setVisibility(View.GONE);
                 Toast.makeText(this, "Ocorreu um Erro", Toast.LENGTH_SHORT).show();
