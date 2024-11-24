@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo"
+        tools:context=".Inicio.TelaCadastro">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crie sua conta"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.155" />
+
+        <View
+            android:id="@+id/container_login"
+            style="@style/containerTelaLogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <EditText
+            android:id="@+id/cadastro_login"
+            style="@style/Edit_text"
+            android:drawableEnd="@drawable/ic_login"
+            android:hint="@string/e_mail"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/container_login"
+            app:layout_constraintStart_toStartOf="@id/container_login"
+            app:layout_constraintTop_toTopOf="@id/container_login" />
+
+        <EditText
+            android:id="@+id/cadastro_senha"
+            style="@style/Edit_text"
+            android:drawableEnd="@drawable/ic_senha"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/container_login"
+            app:layout_constraintStart_toStartOf="@id/container_login"
+            app:layout_constraintTop_toBottomOf="@id/cadastro_login" />
+
+        <EditText
+            android:id="@+id/confirma_senha"
+            style="@style/Edit_text"
+            android:drawableEnd="@drawable/ic_senha"
+            android:hint="@string/confirma_senha"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/container_login"
+            app:layout_constraintStart_toStartOf="@id/container_login"
+            app:layout_constraintTop_toBottomOf="@id/cadastro_senha" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_confirmar"
+            style="@style/Btn"
+            android:text="Criar Conta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_login" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_voltar"
+            style="@style/Btn"
+            android:text="Voltar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_confirmar" />
+
+        <ProgressBar
+            android:id="@+id/progessbar_carregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_voltar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
