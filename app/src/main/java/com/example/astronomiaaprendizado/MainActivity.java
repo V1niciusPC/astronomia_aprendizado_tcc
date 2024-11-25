@@ -7,12 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import com.example.astronomiaaprendizado.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private NavHostFragment navHostFragment;
+    private NavController navController;
 
 
     @Override
@@ -26,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        initNavigation();
+    }
+
+    private void initNavigation(){
+        navHostFragment
+                = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+        navController = navHostFragment.getNavController();
+        NavigationUI.setupWithNavController(binding.bottomNavigation,navController);
+
     }
 
 }

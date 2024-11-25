@@ -6,4 +6,9 @@
     <string name="entrar">ENTRAR</string>
     <string name="crie_conta">Cadastre seu Email Clikando aqui</string>
     <string name="confirma_senha">Confirma Senha</string>
+    <string name="tela1">Estudos</string>
+    <string name="tela2">Perfil</string>
+    <string name="tela3">Costelações</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

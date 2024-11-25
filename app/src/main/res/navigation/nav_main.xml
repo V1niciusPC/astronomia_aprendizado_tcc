@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/estudo">
+
+    <fragment
+        android:id="@+id/estudo"
+        android:name="com.example.astronomiaaprendizado.fragmentmenu.EstudosFragment"
+        android:label="fragment_estudos"
+        tools:layout="@layout/fragment_estudos" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.example.astronomiaaprendizado.fragmentmenu.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/costela"
+        android:name="com.example.astronomiaaprendizado.fragmentmenu.EstrelasFragment"
+        android:label="fragment_estrelas"
+        tools:layout="@layout/fragment_estrelas" />
+</navigation>

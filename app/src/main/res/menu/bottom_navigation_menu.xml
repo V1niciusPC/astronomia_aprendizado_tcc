@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/estudo"
+        android:icon="@drawable/ic_estudo"
+        android:title="@string/tela1" />
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="@string/tela2"/>
+
+    <item
+        android:id="@+id/costela"
+        android:icon="@drawable/ic_estrela"
+        android:title="@string/tela3"/>
+
+
+</menu>
