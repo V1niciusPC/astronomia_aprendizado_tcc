@@ -32,5 +32,12 @@
 
 
     </style>
+    <style name="information_tela">
+        <item name="android:layout_width"> match_parent</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:background">@drawable/information_tela</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
 
 </resources>
