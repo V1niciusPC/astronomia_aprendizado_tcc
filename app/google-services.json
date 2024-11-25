@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344972800572",
+    "project_id": "astronomia-aprendizado",
+    "storage_bucket": "astronomia-aprendizado.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344972800572:android:72ed750586ca752cf6c939",
+        "android_client_info": {
+          "package_name": "com.example.astronomiaaprendizado"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ-vEoPbTEDAO3vQ01agZkuFrrlanXenM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
