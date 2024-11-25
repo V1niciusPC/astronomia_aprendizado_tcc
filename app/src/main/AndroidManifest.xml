@@ -13,13 +13,13 @@
         android:theme="@style/Theme.AstronomiaAprendizado"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Inicio.TelaLogin"
             android:exported="false" />
         <activity
             android:name=".Inicio.TelaCadastro"
             android:exported="false" />
         <activity
-            android:name=".Inicio.TelaLogin"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

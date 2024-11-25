@@ -49,7 +49,6 @@ public class TelaLogin extends AppCompatActivity {
             if (!senha.isEmpty()){
                 binding.carregando.setVisibility(View.VISIBLE);
                 loginFirebase(email,senha);
-                finish();
 
             }else {
                 Toast.makeText(this, "Campo de senha vazio", Toast.LENGTH_SHORT).show();

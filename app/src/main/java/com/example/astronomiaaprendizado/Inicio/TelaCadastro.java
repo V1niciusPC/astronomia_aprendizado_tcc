@@ -67,7 +67,6 @@ public class TelaCadastro extends AppCompatActivity {
             senhaArmazenada = senha;
             binding.progessbarCarregar.setVisibility(View.VISIBLE);
             contaFirebase(email,senhaArmazenada);
-            finish();
         }else {
             Toast.makeText(this, "Senhas Diferentes", Toast.LENGTH_SHORT).show();
         }
